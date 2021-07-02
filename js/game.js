@@ -121,6 +121,10 @@ class Game {
             }
         }
 
+        if(player.score >= 10){
+            gameState = 2
+        }
+
 
 
 
@@ -130,6 +134,8 @@ class Game {
     }
 
     end() {
-        console.log("Game Ended");
+        textSize(50)
+        fill("red")
+        text("GAMEOVER",500,300)
     }
 }
